@@ -31,7 +31,7 @@ const About = () => {
       marginTop: 54,
     },
     logo: {
-      width: 102,
+      width: 124,
       height: 124,
     },
     textFree: {
