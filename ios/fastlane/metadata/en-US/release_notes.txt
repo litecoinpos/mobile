@@ -1,0 +1,62 @@
+v5.5.1
+======
+
+* ADD: Dark Mode
+* FIX: #1309 Sharing doesnt include text
+* FIX: import mnemonic w/typo, 'try again' does nothing (closes #1286)
+* ADD: support importing watch-only in bitcoincore format [fingerprint/derivation]xpub (wallet descriptors)
+* REF: dont store txhex in transactions list
+* REF: wrap save storage in try-catch
+
+v5.5.0
+======
+
+* FIX: provide entropy for D20
+* REF: speeded up transactions list
+
+v5.4.4
+======
+
+* ADD: support for Cobo Vault hardware wallet (animated QR codes)
+* ADD: Provide entropy via dice rolls or coin flip
+* ADD: Option to exclude some wallet's transactions #248 (#1220)
+* ADD: Detect language and currency setting on first run
+* ADD: Launch screen dark mode
+* FIX: cant send onchain when scanning QR with address & amount
+* FIX: errors when fetching huge transactions from electrum server
+* FIX: lnurl withdrawal when currency is set to fiat (closes #1290)
+* FIX: local trader: when user is not logged in, clicking 'accept offer' should not just throw alert, but open login screen
+* FIX: local trader: before accepting offer, refetch it and use fresh id and version so there are no 'outdated' errors
+* FIX: local trader: when 'I am selling', sort order should be reversed
+* REF: Replace FaceID image
+* REF: optimize png images size
+* REF: speeded up legacy HD wallets (BIP44)
+
+v5.4.3
+======
+
+* ADD: Login to Local Trader with HodlHodl
+* ADD: See full listing screen
+* ADD: See your contracts/offers
+* ADD: Accept offer (buy Litecoin-PoS)
+* ADD: You can now modify on-chain transaction note to self
+* ADD: ILS Fiat
+* REF: improved electrum server connectivity
+* FIX: deeplinking for cold boot
+* FIX: lnurl withdrawal when default unit is not sat (closes #1234)
+* FIX: StatusBar wasn't visible when modals opened
+* FIX: Euro symbol for iOS Today extension
+* FIX: Change Withdraw to Exchange
+* DEL: support for BIP70
+
+v5.4.1
+======
+
+* ADD: fiat input for receive & send
+* ADD: Fee details to lighting invoice
+* FIX: Watch-only Wallets we're not being synced to Watch app
+* FIX: following onchain+offchain invoice
+* FIX: Reorder wallets not working
+* FIX: extend pull to close gesture area to full modal height
+* FIX: Don't allow navigating backwards on backup screens
+* FIX: round fiat currencies
