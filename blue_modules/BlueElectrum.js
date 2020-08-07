@@ -9,7 +9,7 @@ const BigNumber = require('bignumber.js');
 const storageKey = 'ELECTRUM_PEERS';
 const defaultPeer = { host: 'electrum.litecoinpos.org', tcp: '5000' };
 const hardcodedPeers = [
-  // { host: 'electrum2.litecoinpos.org', tcp: '5000' }, // down
+   { host: 'electrum.litecoinpos.org', tcp: '5000' }, // down
   //{ host: 'electrum3.litecoinpos.org', ssl: '443' },
 ];
 
