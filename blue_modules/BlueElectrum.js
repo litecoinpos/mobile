@@ -7,9 +7,9 @@ const reverse = require('buffer-reverse');
 const BigNumber = require('bignumber.js');
 
 const storageKey = 'ELECTRUM_PEERS';
-const defaultPeer = { host: 'electrum.litecoinpos.org', ssl: '443' };
+const defaultPeer = { host: 'electrum.litecoinpos.org', tcp: '5000' };
 const hardcodedPeers = [
-  // { host: 'noveltybobble.coinjoined.com', tcp: '50001' }, // down
+   { host: 'electrum.litecoinpos.org', ssl: '5001' }, // down
   // { host: 'electrum.be', tcp: '50001' },
   // { host: 'node.ispol.sk', tcp: '50001' }, // down
   // { host: '139.162.14.142', tcp: '50001' },
