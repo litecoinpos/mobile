@@ -29,14 +29,6 @@ const LoadingScreen = () => {
     walletMigrate.current.start();
   }, [walletMigrate]);
 
-  return (
-    <LottieView
-      ref={loadingAnimation}
-      source={require('./img/bluewalletsplash.json')}
-      autoPlay
-      loop={false}
-      onAnimationFinish={onAnimationFinish}
-    />
-  );
+  return onAnimationFinish();
 };
 export default LoadingScreen;
