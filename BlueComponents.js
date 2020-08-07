@@ -2433,14 +2433,7 @@ export class BlueBitcoinAmount extends Component {
                 </Text>
               )}
             </View>
-            <View style={{ alignItems: 'center', marginBottom: 22 }}>
-              <Text style={{ fontSize: 16, color: '#9BA0A9', fontWeight: '600' }}>
-                {this.state.unit === BitcoinUnit.LOCAL_CURRENCY && amount !== BitcoinUnit.MAX
-                  ? removeTrailingZeros(secondaryDisplayCurrency)
-                  : secondaryDisplayCurrency}
-                {this.state.unit === BitcoinUnit.LOCAL_CURRENCY && amount !== BitcoinUnit.MAX ? ` ${BitcoinUnit.BTC}` : null}
-              </Text>
-            </View>
+         
           </View>
           
         </View>
