@@ -17,7 +17,6 @@ const Settings = () => {
     <ScrollView style={styles.root}>
       <StatusBar barStyle="default" />
       <BlueHeaderDefaultSubHooks leftText={loc.settings.header} rightComponent={null} />
-      <BlueListItemHooks title={loc.settings.general} component={TouchableOpacity} onPress={() => navigate('GeneralSettings')} chevron />
       <BlueListItemHooks title={loc.settings.currency} component={TouchableOpacity} onPress={() => navigate('Currency')} chevron />
       <BlueListItemHooks title={loc.settings.language} component={TouchableOpacity} onPress={() => navigate('Language')} chevron />
       <BlueListItemHooks
