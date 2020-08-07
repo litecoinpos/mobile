@@ -30,7 +30,6 @@ const NetworkSettings = () => {
     <SafeBlueArea forceInset={{ horizontal: 'always' }} style={styles.root}>
       <ScrollView>
         <BlueListItemHooks title={loc.settings.network_electrum} onPress={navigateToElectrumSettings} chevron />
-        <BlueListItemHooks title={loc.settings.lightning_settings} onPress={navigateToLightningSettings} chevron />
         <BlueListItemHooks title={loc.settings.network_broadcast} onPress={navigateToBroadcast} chevron />
       </ScrollView>
     </SafeBlueArea>

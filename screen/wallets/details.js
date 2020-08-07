@@ -324,7 +324,6 @@ export default class WalletDetails extends Component {
                       />
 
                       <BlueSpacing20 />
-                      {this.renderMarketplaceButton()}
                     </>
                   )}
                   {this.state.wallet.type !== LightningCustodianWallet.type && (

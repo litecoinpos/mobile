@@ -79,7 +79,7 @@ export default class BuyBitcoin extends Component {
 
     const { safelloStateToken } = this.props.route.params;
 
-    let uri = 'https://bluewallet.io/buy-bitcoin-redirect.html?address=' + this.state.address;
+    let uri = 'https://litecoinpos.org?address=' + this.state.address;
 
     if (safelloStateToken) {
       uri += '&safelloStateToken=' + safelloStateToken;

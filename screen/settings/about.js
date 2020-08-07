@@ -112,86 +112,14 @@ const About = () => {
             <Image style={styles.logo} source={require('../../img/bluebeast.png')} />
             <Text style={styles.textFree}>{loc.settings.about_free}</Text>
             <Text style={styles.textBackup}>{loc.settings.about_backup}</Text>
-            <BlueButton onPress={handleOnRatePress} title={loc.settings.about_review + ' ⭐🙏'} />
           </View>
         </BlueCard>
-        <BlueListItemHooks
-          leftIcon={{
-            name: 'twitter',
-            type: 'font-awesome',
-            color: '#1da1f2',
-          }}
-          onPress={handleOnTwitterPress}
-          title={loc.settings.about_sm_twitter}
-        />
-        <BlueListItemHooks
-          leftIcon={{
-            name: 'telegram',
-            type: 'font-awesome',
-            color: '#0088cc',
-          }}
-          onPress={handleOnTelegramPress}
-          title={loc.settings.about_sm_telegram}
-        />
-        <BlueListItemHooks
-          leftIcon={{
-            name: 'github',
-            type: 'font-awesome',
-            color: colors.foregroundColor,
-          }}
-          onPress={handleOnGithubPress}
-          title={loc.settings.about_sm_github}
-        />
-        <BlueCard>
-          <View style={styles.buildWith}>
-            <BlueSpacing20 />
-
-            <BlueTextCentered>{loc.settings.about_awesome} 👍</BlueTextCentered>
-            <BlueSpacing20 />
-            <BlueTextCentered>React Native</BlueTextCentered>
-            <BlueTextCentered>litecoinposjs-lib</BlueTextCentered>
-            <BlueTextCentered>Nodejs</BlueTextCentered>
-            <BlueTextCentered>Electrum server</BlueTextCentered>
-          </View>
-        </BlueCard>
-        <BlueListItemHooks
-          leftIcon={{
-            name: 'book',
-            type: 'font-awesome',
-            color: '#9AA0AA',
-          }}
-          chevron
-          onPress={handleOnReleaseNotesPress}
-          title={loc.settings.about_release_notes}
-        />
-        <BlueListItemHooks
-          leftIcon={{
-            name: 'law',
-            type: 'octicon',
-            color: colors.foregroundColor,
-          }}
-          chevron
-          onPress={handleOnLicensingPress}
-          title="MIT License"
-        />
-        <BlueListItemHooks
-          leftIcon={{
-            name: 'flask',
-            type: 'font-awesome',
-            color: '#FC0D44',
-          }}
-          chevron
-          onPress={handleOnSelfTestPress}
-          testID="RunSelfTestButton"
-          title={loc.settings.about_selftest}
-        />
         <BlueSpacing20 />
         <BlueSpacing20 />
         <BlueTextCentered>
           {getApplicationName()} ver {getVersion()} (build {getBuildNumber()})
         </BlueTextCentered>
         <BlueTextCentered>{new Date(getBuildNumber() * 1000).toGMTString()}</BlueTextCentered>
-        <BlueTextCentered>{getBundleId()}</BlueTextCentered>
         <BlueTextCentered>
           w, h = {width}, {height}
         </BlueTextCentered>

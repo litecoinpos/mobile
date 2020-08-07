@@ -223,7 +223,7 @@ export default class TransactionsDetails extends Component {
                 <BlueText style={styles.txHash}>{this.state.tx.hash}</BlueText>
                 <TouchableOpacity
                   onPress={() => {
-                    const url = `https://blockstream.info/tx/${this.state.tx.hash}`;
+                    const url = `https://explorer.litecoinpos.org/tx/${this.state.tx.hash}`;
                     Linking.canOpenURL(url).then(supported => {
                       if (supported) {
                         Linking.openURL(url);

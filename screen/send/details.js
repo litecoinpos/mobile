@@ -279,12 +279,12 @@ export default class SendDetails extends Component {
   /**
    * TODO: refactor this mess, get rid of regexp, use https://github.com/litecoinposjs/litecoinposjs-lib/issues/890 etc etc
    *
-   * @param data {String} Can be address or `bitcoin:xxxxxxx` uri scheme, or invalid garbage
+   * @param data {String} Can be address or `litecoinpos:xxxxxxx` uri scheme, or invalid garbage
    */
   processAddressData = data => {
     this.setState({ isLoading: true }, async () => {
       const recipients = this.state.addresses;
-      const dataWithoutSchema = data.replace('bitcoin:', '').replace('BITCOIN:', '');
+      const dataWithoutSchema = data.replace('litecoinpos:', '').replace('LITECOINPOS:', '');
       if (this.state.fromWallet.isAddressValid(dataWithoutSchema)) {
         recipients[[this.state.recipientsScrollIndex]].address = dataWithoutSchema;
         const units = this.state.units;
@@ -299,8 +299,8 @@ export default class SendDetails extends Component {
         let address = '';
         let options;
         try {
-          if (!data.toLowerCase().startsWith('bitcoin:')) {
-            data = `bitcoin:${data}`;
+          if (!data.toLowerCase().startsWith('litecoinpos:')) {
+            data = `litecoinpos:${data}`;
           }
           const decoded = DeeplinkSchemaMatch.bip21decode(data);
           address = decoded.address;
