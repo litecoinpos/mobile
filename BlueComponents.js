@@ -2442,14 +2442,7 @@ export class BlueBitcoinAmount extends Component {
               </Text>
             </View>
           </View>
-          {!this.props.disabled && (
-            <TouchableOpacity
-              style={{ alignSelf: 'center', marginRight: 16, paddingLeft: 16, paddingVertical: 16 }}
-              onPress={this.changeAmountUnit}
-            >
-              <Image source={require('./img/round-compare-arrows-24-px.png')} />
-            </TouchableOpacity>
-          )}
+          
         </View>
       </TouchableWithoutFeedback>
     );
