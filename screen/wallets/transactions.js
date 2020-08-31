@@ -637,7 +637,7 @@ export default class WalletTransactions extends Component {
         {this.state.wallet.chain === Chain.ONCHAIN && this.state.isHandOffUseEnabled && (
           <Handoff
             title={`Litecoin-PoS Wallet ${this.state.wallet.getLabel()}`}
-            type="io.bluewallet.bluewallet"
+            type="org.litecoinpos.ltcpwallet"
             url={`https://blockpath.com/search/addr?q=${this.state.wallet.getXpub()}`}
           />
         )}

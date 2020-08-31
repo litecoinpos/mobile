@@ -169,7 +169,7 @@ export default class TransactionsDetails extends Component {
         {this.state.isHandOffUseEnabled && (
           <Handoff
             title={`Litecoin-PoS Transaction ${this.state.tx.hash}`}
-            type="io.bluewallet.bluewallet"
+            type="org.litecoinpos.ltcpwallet"
             url={`https://blockstream.info/tx/${this.state.tx.hash}`}
           />
         )}

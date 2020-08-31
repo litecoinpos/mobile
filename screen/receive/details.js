@@ -319,16 +319,16 @@ const ReceiveDetails = () => {
   };
 
   /**
-   * @returns {string} BTC amount, accounting for current `customUnit` and `customUnit`
+   * @returns {string} LTCP amount, accounting for current `customUnit` and `customUnit`
    */
   const getDisplayAmount = () => {
     switch (customUnit) {
       case BitcoinUnit.BTC:
-        return customAmount + ' BTC';
+        return customAmount + ' LTCP';
       case BitcoinUnit.SATS:
-        return currency.satoshiToBTC(customAmount) + ' BTC';
+        return currency.satoshiToBTC(customAmount) + ' LTCP';
       case BitcoinUnit.LOCAL_CURRENCY:
-        return currency.fiatToBTC(customAmount) + ' BTC';
+        return currency.fiatToBTC(customAmount) + ' LTCP';
     }
     return customAmount + ' ' + customUnit;
   };
@@ -339,7 +339,7 @@ const ReceiveDetails = () => {
       {isHandOffUseEnabled && address !== undefined && showAddress && (
         <Handoff
           title={`Litecoin-PoS Transaction ${address}`}
-          type="io.bluewallet.bluewallet"
+          type="org.litecoinpos.ltcpwallet"
           url={`https://blockstream.info/address/${address}`}
         />
       )}

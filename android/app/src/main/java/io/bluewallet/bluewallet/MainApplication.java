@@ -1,4 +1,4 @@
-package io.bluewallet.bluewallet;
+package org.litecoinpos.ltcpwallet;
 
 import android.app.Application;
 import android.content.Context;

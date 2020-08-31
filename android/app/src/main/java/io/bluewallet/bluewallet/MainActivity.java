@@ -1,4 +1,4 @@
-package io.bluewallet.bluewallet;
+package org.litecoinpos.ltcpwallet;
 
 import com.facebook.react.ReactActivity;
 
