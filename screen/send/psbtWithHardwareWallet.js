@@ -34,14 +34,14 @@ import { RNCamera } from 'react-native-camera';
 import RNFS from 'react-native-fs';
 import DocumentPicker from 'react-native-document-picker';
 import { decodeUR, extractSingleWorkload } from 'bc-ur/dist';
-import { Psbt } from 'litecoinposjs-lib';
+import { Psbt } from 'bitcoinjs-lib';
 import loc from '../../loc';
 import { BlueCurrentTheme } from '../../components/themes';
 const EV = require('../../blue_modules/events');
 const BlueElectrum = require('../../blue_modules/BlueElectrum');
 /** @type {AppStorage} */
 const BlueApp = require('../../BlueApp');
-const bitcoin = require('litecoinposjs-lib');
+const bitcoin = require('bitcoinjs-lib');
 const notifications = require('../../blue_modules/notifications');
 const { height, width } = Dimensions.get('window');
 

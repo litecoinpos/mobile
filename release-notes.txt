@@ -1,0 +1,26 @@
+* TST: commented out failing detox (broken rn-elements?) 
+* fix: upgrade react-native-elements from 2.0.2 to 2.1.0 Snyk has created this PR to upgrade react-native-elements from 2.0.2 to 2.1.0.
+
+See this package in npm:
+https://www.npmjs.com/package/react-native-elements
+
+See this project in Snyk:
+https://app.snyk.io/org/bluewallet/project/4d0df22a-0152-410a-8584-6df0d0a596d4?utm_source=github&utm_medium=upgrade-pr
+
+* FIX: recieve button for watch-only wallets 
+* ADD: Camera Permission authorization view 
+* ADD: Public category property for mac 
+* ADD: Refresh Button for Desktop 
+* Translate /loc/en.json in fi_FI translation completed updated for the source file '/loc/en.json'
+on the 'fi_FI' language.
+* fix: upgrade @babel/preset-env from 7.10.3 to 7.11.0 Snyk has created this PR to upgrade @babel/preset-env from 7.10.3 to 7.11.0.
+
+See this package in npm:
+https://www.npmjs.com/package/@babel/preset-env
+
+See this project in Snyk:
+https://app.snyk.io/org/bluewallet/project/4d0df22a-0152-410a-8584-6df0d0a596d4?utm_source=github&utm_medium=upgrade-pr
+
+* Translate /loc/en.json in ru translation completed for the source file '/loc/en.json'
+on the 'ru' language.
+* REL: ved bump & release notes 

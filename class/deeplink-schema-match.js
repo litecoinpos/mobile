@@ -4,7 +4,7 @@ import RNFS from 'react-native-fs';
 import url from 'url';
 import { Chain } from '../models/bitcoinUnits';
 import Azteco from './azteco';
-const bitcoin = require('litecoinposjs-lib');
+const bitcoin = require('bitcoinjs-lib');
 const bip21 = require('bip21');
 const BlueApp: AppStorage = require('../BlueApp');
 

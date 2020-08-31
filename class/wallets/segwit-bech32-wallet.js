@@ -1,5 +1,5 @@
 import { LegacyWallet } from './legacy-wallet';
-const bitcoin = require('litecoinposjs-lib');
+const bitcoin = require('bitcoinjs-lib');
 const coinSelectAccumulative = require('coinselect/accumulative');
 const coinSelectSplit = require('coinselect/split');
 

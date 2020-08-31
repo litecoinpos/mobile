@@ -1,5 +1,5 @@
 /* global it, describe, jasmine */
-const bitcoin = require('litecoinposjs-lib');
+const bitcoin = require('bitcoinjs-lib');
 global.net = require('net');
 global.tls = require('tls');
 

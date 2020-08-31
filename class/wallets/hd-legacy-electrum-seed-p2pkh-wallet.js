@@ -1,6 +1,6 @@
 import { HDLegacyP2PKHWallet } from '..';
 
-const bitcoin = require('litecoinposjs-lib');
+const bitcoin = require('bitcoinjs-lib');
 const mn = require('electrum-mnemonic');
 const HDNode = require('bip32');
 

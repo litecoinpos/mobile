@@ -43,7 +43,7 @@ import DocumentPicker from 'react-native-document-picker';
 import DeeplinkSchemaMatch from '../../class/deeplink-schema-match';
 import loc from '../../loc';
 import { BlueCurrentTheme } from '../../components/themes';
-const bitcoin = require('litecoinposjs-lib');
+const bitcoin = require('bitcoinjs-lib');
 const currency = require('../../blue_modules/currency');
 const BigNumber = require('bignumber.js');
 const { width } = Dimensions.get('window');
@@ -277,7 +277,7 @@ export default class SendDetails extends Component {
   }
 
   /**
-   * TODO: refactor this mess, get rid of regexp, use https://github.com/litecoinposjs/litecoinposjs-lib/issues/890 etc etc
+   * TODO: refactor this mess, get rid of regexp, use https://github.com/litecoinposjs/bitcoinjs-lib/issues/890 etc etc
    *
    * @param data {String} Can be address or `litecoinpos:xxxxxxx` uri scheme, or invalid garbage
    */

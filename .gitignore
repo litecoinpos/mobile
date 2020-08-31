@@ -55,9 +55,6 @@ buck-out/
 # Bundle artifact
 *.jsbundle
 
-#BlueWallet
-release-notes.json
-release-notes.txt
 
 ios/Pods/
 

@@ -17,7 +17,7 @@ import {
 } from '../../BlueComponents';
 import { BlueCurrentTheme } from '../../components/themes';
 import BlueElectrum from '../../blue_modules/BlueElectrum';
-const bitcoin = require('litecoinposjs-lib');
+const bitcoin = require('bitcoinjs-lib');
 const notifications = require('../../blue_modules/notifications');
 
 const BROADCAST_RESULT = Object.freeze({
